@@ -7,3 +7,12 @@ let revenuAnuelTotal = salaire + bonus + cours
 console.log("revenu anuel total :" ,revenuAnuelTotal, "euro");
 
 
+// Reponse numero 3
+function estVariableValide(nomVariable) {
+    const regex = /^[a-zA-Z_$][a-zA-Z0-9_$]*$/;
+    return regex.test(nomVariable);
+}
+console.log(estVariableValide('first_name'));
+console.log(estVariableValide('first-name'));
+console.log(estVariableValide('1first_name'));
+console.log(estVariableValide('firstname'));
